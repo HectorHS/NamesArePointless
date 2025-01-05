@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+
+body {
+    @apply bg-gray text-textColor font-main;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    letter-spacing: 0.12rem;
+    word-spacing: 0.15rem;
+}
+h1 {
+  font-size: clamp(1rem, 3vw, 1.7rem);
+  @apply text-yellow border-yellow pl-4 font-bold;
+  border-left: 7px solid;
+}
+h2 {
+  /* @apply font-bold border-b-4 tracking-wider pb-2 mb-10; */
+  @apply font-bold mb-5 text-yellow;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+
+}
+h3 {
+  /* @apply font-bold border-b-4 tracking-wider pb-2 mb-10; */
+  // font-size: clamp(1rem, 4vw, 1.5rem);
+  font-size: clamp(0.9rem, 2.2vw, 1.4rem);
+  @apply font-extrabold break-words text-yellow;
+}
+h4 {
+  /* @apply font-bold tracking-wider pb-2; */
+  font-size: clamp(1rem, 4vw, 1.3rem);
+}
+h5 {
+  @apply font-bold text-yellow;
+}
+p {
+  @apply pb-7;
+  /* @apply tracking-wide mt-2; */
+}
+hr {
+  @apply mt-12 mb-5 border-blue;
+}
+a {
+  @apply text-blue;
+}
+.button {
+  @apply p-2 px-6 border-2 h-fit border-yellow font-bold text-yellow hover:bg-yellow hover:text-gray;
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+}
+
+

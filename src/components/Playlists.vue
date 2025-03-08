@@ -15,7 +15,6 @@
                     <button @click="stopPlaylist" class="button mb-4">< return</button>
                     <div class=" h-[70vh] w-[80vw]" id="player"></div>
                 </div>
-            
         </div>
     <!-- </Transition> -->
     </div>
@@ -51,6 +50,11 @@
             {title: 'Drifting soula', image: 'drifting-soula.jpg',path: 'PL2REN8gs_cfmogrUXf_BaDD1PYkUersdR'},
             {title: 'Groovy', image: 'groovy.jpg',path: 'PL2REN8gs_cfmuPoDWb5RNLnPwJ6BzHUFO'},
             {title: 'Floyd', image: 'floyd.jpg',path: 'PL2REN8gs_cfnPIQ1DhcibMB6HzpTaqIWX'},
+            {title: 'Moby', image: 'moby.jpg',path: 'PL2REN8gs_cfm28QQ07BHSboEAKhwgQlx5'},
+            {title: 'Bo', image: 'bo.jpg',path: 'PL2REN8gs_cfl6me9STJvU-D9UlYJIG6he'},
+            {title: 'Paliometal', image: 'paliometal.jpg',path: 'PL2REN8gs_cfndfnR45uqSrUr9IGXXGufM'},
+            {title: 'Uberchill', image: 'uberchill.jpg',path: 'PL2REN8gs_cfnxNKxhc7RSUxQXI6hU9_iT'},
+            {title: 'Jack White', image: 'white.jpg', path: 'PL2REN8gs_cfnD_Gb-rBO081ZFLntV3Hcs'},
         ] as PlaylistItem[],
         player: undefined as any,
         playListArrayLength: 0,

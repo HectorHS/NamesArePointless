@@ -13,11 +13,11 @@
         <h3 v-else>{{item.title}}</h3>
         <div>{{item.subtitle}}</div>
         <div class="mt-6 ml-6">
-          <div class="flex">
+          <div class="flex flex-col md:flex-row">
             <CeramicImage :image="item.image" size="medium"></CeramicImage>
-            <div v-html="item.recipe" class="my-auto pl-5"></div>
+            <div v-html="item.recipe" class="my-auto pt-5 md:pl-5 md:pt-0"></div>
           </div>
-          <div v-if="item.notes">Notes: {{ item.notes }}</div>
+          <div v-if="item.notes" class="pt-5">Notes: {{ item.notes }}</div>
         </div>
       </div>
     </div>

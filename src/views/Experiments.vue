@@ -4,7 +4,7 @@
       <h1 class="mb-6">BASES</h1>
       <a class="button text-textColor" href="/">< return</a>
     </div>
-    <div class="pl-16">
+    <div class="pl-8 md:pl-16">
       <!-- bases -->
       <div v-for="item of bases" class="mb-10 border-l-4 border-yellow-400 pl-2">
         <a :href="item.link" target="_blank">
@@ -12,11 +12,11 @@
         </a>
         <div>{{item.subtitle}}</div>
         <div class="mt-6 ml-6">
-          <div class="flex">
+          <div class="flex flex-col md:flex-row">
             <CeramicImage :image="item.image" size="medium"></CeramicImage>
-            <div v-html="item.recipe" class="my-auto pl-5"></div>
+            <div v-html="item.recipe" class="my-auto pt-5 md:pl-5 md:pt-0"></div>
           </div>
-          <div v-if="item.notes">Notes: {{ item.notes }}</div>
+          <div v-if="item.notes" class="pt-5">Notes: {{ item.notes }}</div>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
           <h3 class="">{{item.name}}</h3>
         </a>
         <div>{{ item.recipe }}</div>
-        <div class=" mt-6 ml-6 grid grid-cols-2 grid-flow-row">
+        <div class=" mt-6 ml-6 grid grid-cols-1 md:grid-cols-2 grid-flow-row">
           <div v-for="child of item.children" class=" ">
             <h5>{{ child.title }}</h5>
             <CeramicGallery :images="child.images"></CeramicGallery>

@@ -77,7 +77,7 @@
 
 <style lang="scss" scoped>
 .photo {
-  @apply h-[100vh] mx-auto mb-6;
+  @apply max-h-[100vh] mx-auto mb-6;
 }
 .text {
   @apply w-mainText mb-6;

@@ -5,13 +5,13 @@
             <div v-if="images[0].notes" class="text-xs">{{ images[0].notes }}</div>
         </div>
         <div v-if="images.length == 2 || images.length == 3 || images.length == 4" class="grid grid-cols-2 grid-flow-row gap-2">
-            <div v-for="image of images" class="w-[15vw]">
+            <div v-for="image of images" class="w-[30vw] md:w-[15vw]">
                 <img class="cursor-pointer" :src="'/images/ceramics/' + image.name " @click="showLightbox(image.name)"/>
                 <div v-if="image.notes" class="text-xs">{{ image.notes }}</div>
             </div>
         </div>
-        <div v-if="images.length > 4" class="grid grid-cols-3 grid-flow-row gap-2">
-            <div v-for="image of images" class="w-[10vw]">
+        <div v-if="images.length > 4" class="grid grid-cols-2 sm:grid-cols-3 grid-flow-row gap-2">
+            <div v-for="image of images" class="w-[30vw] sm:w-[20vw] md:w-[10vw]">
                 <img  class="cursor-pointer" :src="'/images/ceramics/' + image.name " @click="showLightbox(image.name)"/>
                 <div v-if="image.notes" class="text-xs">{{ image.notes }}</div>
             </div>
@@ -23,7 +23,7 @@
                 <div class="flex">
 
                     <div class="mx-auto" @click.stop="">
-                        <img class="h-[90vh] " :src="'/images/ceramics/' + largeImage">
+                        <img class="max-h-[90vh] " :src="'/images/ceramics/' + largeImage">
                     </div>
 
                 </div>

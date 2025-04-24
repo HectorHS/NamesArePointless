@@ -7,7 +7,7 @@
             <div class="flex">
 
                 <div class="mx-auto" @click.stop="">
-                    <img class="h-[90vh] " :src="image">
+                    <img class="max-h-[90vh] " :src="image">
                 </div>
 
             </div>
@@ -42,7 +42,7 @@
         classes() {
             let css = '';
             if (this.size == 'medium') {
-                css = 'h-[50vh]';
+                css = 'max-h-[50vh]';
             } else {
                 css = 'h-32';
             }

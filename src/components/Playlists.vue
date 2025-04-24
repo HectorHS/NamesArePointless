@@ -114,7 +114,7 @@
                 this.createArray();
                 setTimeout(function(){
                     _.ignoreEvents = false;
-                }, 2000);
+                }, 4000);
                 
             // This used to work just with the ENDED state, but the player is no longer entering the ended state unless the whole playlist endss (playing the last song)
             } else if ((event.data == -1 || event.data == 0) && !this.ignoreEvents) {
@@ -124,7 +124,7 @@
                 // This is to prevent multiple loops where starting a new video fires up the unstarted event which makes us fiere a new video etc
                 setTimeout(function(){
                     _.ignoreEvents = false;
-                }, 2000);
+                }, 4000);
             }
         },
         newRandomNumber():number {
@@ -152,6 +152,7 @@
         stopPlaylist() {
             this.selected = false;
             this.firstLoad = true;
+            this.arrayTracker = [];
             if (this.player) {
                 this.player.stopVideo();
             }

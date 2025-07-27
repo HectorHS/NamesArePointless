@@ -55,6 +55,7 @@
             {title: 'Paliometal', image: 'paliometal.jpg',path: 'PL2REN8gs_cfndfnR45uqSrUr9IGXXGufM'},
             {title: 'Uberchill', image: 'uberchill.jpg',path: 'PL2REN8gs_cfnxNKxhc7RSUxQXI6hU9_iT'},
             {title: 'Jack White', image: 'white.jpg', path: 'PL2REN8gs_cfnD_Gb-rBO081ZFLntV3Hcs'},
+            {title: 'Chill', image: 'chill.jpg', path: 'PL2REN8gs_cfmub0KbyiB5z3HCU9dUwVJo'},
         ] as PlaylistItem[],
         player: undefined as any,
         playListArrayLength: 0,
